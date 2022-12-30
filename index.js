@@ -35,7 +35,9 @@ searchForm.addEventListener('input', function onSearchFormSubmitted(event){
   )
   //錯誤處理：無符合條件的結果
   if (filteredMovies.length === 0){
-    return alert(`您輸入的關鍵字：${keyword} 沒有符合條件的電影`)
+    document.getElementById("search-input").value = "";
+    //跳出警告
+    alert(`您輸入的關鍵字：${keyword} 沒有符合條件的電影`);
   }
   //重新輸出至畫面
   renderPaginator(filteredMovies.length)
