@@ -19,7 +19,7 @@ const paginator = document.querySelector('#paginator')
 
 
 //設立搜尋監聽器
-searchForm.addEventListener('input',function onSearchFormSubmitted(event){
+searchForm.addEventListener('input', function onSearchFormSubmitted(event){
   event.preventDefault() //停止事件的默認動作,如 a、button可能會跳出頁面
   //toLowerCase()，字串轉小寫
   //trim()，把字串頭尾空格去掉
